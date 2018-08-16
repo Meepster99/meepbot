@@ -38,7 +38,7 @@ function respond() {
    
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postString(String.fromCharCode(0xD83C, 0xDFB7);
+    postString(String.fromCharCode(0xD83C, 0xDFB7));
     this.res.end();
   }
   
