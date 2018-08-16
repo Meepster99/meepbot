@@ -18,13 +18,30 @@ function respond() {
   }
   
   //below this is stuff u added
-  botRegex = /trumpets|flutes|claranets/i;
+  botRegex = /trumpets|flutes|claranets|sousaphones/i;
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
     postString("suck");
     this.res.end();
   }
+  
+  botRegex = /Zack Kozma/i;
+  
+  if(request.text && botRegex.test(request.text)) {
+    this.res.writeHead(200);
+    postString("suck");
+    this.res.end();
+  }
+  
+  botRegex = /saxophones/i;
+   
+  if(request.text && botRegex.test(request.text)) {
+    this.res.writeHead(200);
+    postString(String.fromCodePoint(0x1F3B7));
+    this.res.end();
+  }
+  
 }
 
 
