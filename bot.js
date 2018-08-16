@@ -18,7 +18,7 @@ function respond() {
   }
   
   //below this is stuff u added
-  botRegex = /trumpets/;
+  botRegex = /trumpets/i;
 
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
