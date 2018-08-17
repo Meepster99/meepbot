@@ -46,7 +46,7 @@ function respond() {
    
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    postString("ligma balls lmao");
+    postString(user_id);
     this.res.end();
   }
   
