@@ -46,8 +46,8 @@ function respond() {
    
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
-    var idk = user_id
-    postString(idk);
+    
+    postString(request.user_id);
     this.res.end();
   }
   
