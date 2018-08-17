@@ -9,9 +9,7 @@ function respond() {
 
   // find out how to filter out chatbots msgs from the chatbot so we dont get another ligma loop
   
-  if( request.user_id == "62042029" ) {
-    this.res.end();
-  }
+ 
   
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
