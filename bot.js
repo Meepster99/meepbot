@@ -7,6 +7,8 @@ function respond() {
   var request = JSON.parse(this.req.chunks[0]),
       botRegex = /^\/test/;
 
+  // find out how to filter out chatbots msgs from the chatbot so we dont get another ligma loop
+  
   if( request.user_id == "62042029" ) {
     this.res.end();
   }
