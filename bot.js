@@ -42,6 +42,14 @@ function respond() {
     this.res.end();
   }
   
+  botRegex = /ligma/i;
+   
+  if(request.text && botRegex.test(request.text)) {
+    this.res.writeHead(200);
+    postString("ligma balls lmao");
+    this.res.end();
+  }
+  
 }
 
 
