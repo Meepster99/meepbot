@@ -54,6 +54,16 @@ function respond() {
     postString(request.user_id);
     this.res.end();
   }
+ 
+  botRegex = /norell/i;
+   
+  if(request.text && botRegex.test(request.text)) {
+    this.res.writeHead(200);
+    
+    postString(Math.random());
+    this.res.end();
+  }
+  
   
 }
 
