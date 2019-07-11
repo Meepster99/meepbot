@@ -60,6 +60,8 @@ function respond() {
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
     
+    postString(""+Math.random());
+    
     if(Math.random() < 0.5) {
       postString("is smoking hot");
     } else {
