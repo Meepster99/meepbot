@@ -60,7 +60,7 @@ function respond() {
   if(request.text && botRegex.test(request.text)) {
     this.res.writeHead(200);
     
-    postString(Math.random());
+    postString("tests");
     this.res.end();
   }
   
